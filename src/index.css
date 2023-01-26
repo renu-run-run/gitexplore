@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Silkscreen&display=swap');
+:root {
+    --gray: #250b49;
+    --dark-gray: #181b22;
+    --black: #111117;
+    --dark-black: #0D1117;
+    --green: #6c47ff;
+    --light: #F0F6FC;
+    --light-gray: #e9ecef;
+}
+
+body, h6, h5, h4, h3, h2, h1, p{
+    margin: 0px;
+    padding: 0px;
+    color: var(--dark-gray);
+    
+}
+.card > ul {
+    color: #343a40;
+
+}
+main {
+    background-color: var(--gray);
+    color: var(--light);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    min-height: calc(100vh - 4rem);
+}
+
+main > .card {
+    width: 95vw;
+    max-width: 500px;
+    background-color: var(--light-gray);
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: var(--gray);
+}
+.incorrect{
+    color: red;
+}
+.incorrect-input {
+    border-color: red;
+    outline-color: red !important;
+}
+.search > form > button{
+    width: 5rem;
+    background-color: var(--green);
+    border-radius: 2px;
+    border-color: var(--green);
+    border-style: solid;
+    cursor: pointer;
+    transition: all 0.05s linear;
+}
+.search > form > button:hover {
+background-color: var(--ligth);
+
+}
+.search > form > input{
+    width: calc(100% - 6rem);
+    margin-right: 0.5rem;
+}
+.search > form > input:focus {
+    outline-color: var(--dark-gray);
+}
+
+
+.detail > img {
+    border-radius: 50%;
+    width: 10rem;
+    margin: 0.5rem;
+    outline: 3px solid var(--green);
+    outline-offset: 4px;
+}
+
+.following-list img, .followers-list img{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+.section-right{
+  display: inline-block;
+  margin: 0px 0.5rem 0px; /*top | horizontal (left, right) | bottom*/
+  vertical-align: top;
+}
+
+.buttons {
+    display: block;
+}
+.buttons > button{
+    width: 10rem;
+    padding: 0.5rem 0px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s linear;
+    border-radius: 2px;
+}
+.buttons > button > span {
+    display: block;
+    font-weight: bold;
+}
+.buttons > button:hover {
+    background-color: var(--green);
+    color: var(--light-gray);
+}
+
+.active{
+    border: 2px solid var(--green) !important;
+}
+.repo-list th {
+    text-align: left;
+}
+.load-more{
+    margin-top: -2.5rem;
+}
+.load-more button {
+    width: 100%;
+    padding: 5px 0px;
+    background-color: transparent;
+    border: 2px solid var(--green);
+    cursor: pointer;
+    transition: all 0.1s linear;
+    border-radius: 2px;
+}
+
+.load-more button:hover {
+    background-color: var(--green);
+    color: white
+}
+
+.repo-list th{
+  text-align: left;
+}
+.footer{
+    text-align: center;
+}
